@@ -1,117 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="index.css" />
+		<title>Space Quiz</title>
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<title>Space Quiz</title>
-</head>
+	<body>
+		<header>
+			<h1>Welcome to my space Quiz!</h1>
+			<h2>Let's see if you can answer</h2>
+			<h2>some esoteric questions!</h2>
+			<button class="start-quiz">
+				Start Quiz
+			</button>
+		</header>
 
-<body>
-	<header>
-		<h1>Welcome to my space Quiz!</h1>
-		<h2>Let's see if you can answer</h2>
-		<h2>some esoteric questions!</h2>
-		<button class="start-quiz">
-			Start Quiz
-		</button>
-	</header>
+		<!-- Question Page -->
+		<section class="question">
+			<h2>Space Quiz</h2>
+			<h3>5 Correct, 2 incorrect</h3>
+			<h3>Question 1</h3>
+			<p>What is bootes void?</p>
 
-	<!-- Question Page -->
-	<section class="question">
-		<h2>Space Quiz</h2>
-		<h3>5 Correct, 2 incorrect</h3>
-		<h3>Question 1</h3>
-		<p>What is bootes void?</p>
+			<form action="#">
+				<label for="asn1">
+					<input type="radio" id="ans1" name="ans1" /> Answer A
+				</label>
+				<label for="asn2">
+					<input type="radio" id="ans2" name="ans1" /> Answer B
+				</label>
+				<label for="asn3">
+					<input type="radio" id="ans3" name="ans1" />Answer C
+				</label>
+				<label for="asn4">
+					<input type="radio" id="ans4" name="ans1" />Answer D
+				</label>
+				<label for="asn5">
+					<input type="radio" id="ans5" name="ans1" />Answer E
+				</label>
+			</form>
+			<button type="submit">Submit</button>
+		</section>
 
-		<form action="#">
-			<label for="asn1">
-				<input type="radio" id="ans1" name="ans1" /> Answer A
-			</label>
-			<label for="asn2"> <input type="radio" id="ans2" name="ans1" /> Answer B
-			</label>
-			<label for="asn3">
-				<input type="radio" id="ans3" name="ans1" />Answer C
-			</label>
-			<label for="asn4">
-				<input type="radio" id="ans4" name="ans1" />Answer D
-			</label>
-			<label for="asn5">
-				<input type="radio" id="ans5" name="ans1" />Answer E
-			</label>
+		<!-- Correct Answer Page -->
+		<section class="correct">
+			<h2>Space Quiz</h2>
+			<h3>Correct!!!</h3>
 
+			<p>What is bootes void?</p>
 
-		</form>
-		<button type="submit">Submit</button>
-	</section>
+			<button type="submit">Next Question</button>
+		</section>
 
-	<!-- Correct Answer Page -->
-	<section class="correct">
-		<h2>Space Quiz</h2>
-		<h3>Correct!!!</h3>
+		<!-- Incorrect Answer Page -->
+		<section class="incorrect">
+			<h2>Space Quiz</h2>
+			<h3>Incorrect:(</h3>
 
-		<p>What is bootes void?</p>
+			<p>What is bootes void?</p>
 
-		<form action="#">
-			<label for="asn1">
-				<input type="radio" id="ans1" name="ans1" /> Answer A
-			</label>
-			<label for="asn2"> <input type="radio" id="ans2" name="ans1" /> Answer B
-			</label>
-			<label for="asn3">
-				<input type="radio" id="ans3" name="ans1" />Answer C
-			</label>
-			<label for="asn4">
-				<input type="radio" id="ans4" name="ans1" />Answer D
-			</label>
-			<label for="asn5">
-				<input type="radio" id="ans5" name="ans1" />Answer E
-			</label>
+			<p>The correct answer is.... A</p>
 
+			<button type="submit">Next Question</button>
+		</section>
 
-		</form>
-		<button type="submit">Next Question</button>
-	</section>
+		<!-- Score Board-->
+		<section class="score">
+			<h1>Space Quiz</h1>
+			<h3>Results</h3>
 
-	<!-- Incorrect Answer Page -->
-	<section class="incorrect">
-		<h2>Space Quiz</h2>
-		<h3>Incorrect:(</h3>
+			<h2>Score: 1 out of 5</h2>
+			<h3>Percent: 20%</h3>
 
-		<p>What is bootes void?</p>
-
-		<form action="#">
-			<label for="asn1">
-				<input type="radio" id="ans1" name="ans1" /> Answer A
-			</label>
-			<label for="asn2"> <input type="radio" id="ans2" name="ans1" /> Answer B
-			</label>
-			<label for="asn3">
-				<input type="radio" id="ans3" name="ans1" />Answer C
-			</label>
-			<label for="asn4">
-				<input type="radio" id="ans4" name="ans1" />Answer D
-			</label>
-			<label for="asn5">
-				<input type="radio" id="ans5" name="ans1" />Answer E
-			</label>
-
-
-		</form>
-		<button type="submit">Next Question</button>
-	</section>
-
-	<!-- Score Board-->
-	<section class="score">
-		<h1>Space Quiz</h1>
-		<h3>Results</h3>
-
-		<h2>Score: 1 out of 5</h2>
-		<h3>Percent: 20%</h3>
-
-		<button class="new-quiz">New Quiz</button>
-	</section>
-</body>
-
+			<button class="new-quiz">New Quiz</button>
+		</section>
+	</body>
 </html>

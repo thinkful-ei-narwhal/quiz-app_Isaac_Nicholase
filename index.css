@@ -1,63 +1,71 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  background-color: blue;
-  color: black;
-  text-align: center;
+	background-color: blue;
+	color: black;
+	text-align: center;
 }
 
+header,
+.question,
+.incorrect,
 .score {
-  display: none;
+	display: none;
 }
 
 header {
-  margin-top: 50px;  
+	margin-top: 50px;
 }
 
 h1 {
-  font-size: 50px;
-  margin-bottom: 50px;
+	font-size: 50px;
+	margin-bottom: 50px;
 }
 
 h2 {
-  font-size: 40px;
+	font-size: 40px;
 }
 
 h3 {
-  font-size: 30px;
+	font-size: 30px;
 }
 
 button {
-  margin-top: 50px;
-  font-size: 50px;
-  width: 350px;
-  border-radius: 50px;
-  background-color: darkblue;
-  color: white;
-  box-shadow: 10px 12px 13px 0 rgba(0,0,0,1);
+	margin-top: 50px;
+	font-size: 50px;
+	width: 350px;
+	border-radius: 50px;
+	background-color: darkblue;
+	color: white;
+	box-shadow: 10px 12px 13px 0 rgba(0, 0, 0, 1);
 }
 
 .question {
-  margin-top: 50px;
+	margin-top: 50px;
 }
 
 p {
-  margin-top: 50px;
-  font-size: 40px;
+	margin-top: 50px;
+	font-size: 40px;
 }
 
 form {
-  margin: auto;
-  border: black 3px solid;
-  display: flex;
-  width: 80%;
-  flex-direction: column;
-  justify-content: flex-start;
-  font-size: 30px;
-  text-align: left;
-  padding: 20px 20px 20px 20px;
+	margin: auto;
+	border: black 3px solid;
+	display: flex;
+	width: 80%;
+	flex-direction: column;
+	justify-content: flex-start;
+	font-size: 30px;
+	text-align: left;
+	padding: 20px 20px 20px 20px;
+}
+
+input[class='ans-correct'] {
+	border: 3px solid green;
+	width: 5em;
 }
